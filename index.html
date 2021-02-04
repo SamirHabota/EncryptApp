@@ -28,7 +28,7 @@
       <h1>EncryptorApp</h1>
     </div>
     <div class="setToCenter">
-      <div class="accordion" id="accordionExample">
+      <div class="accordion" id="mainAccordion">
         <div class="card">
           <div
             class="card-header d-flex justify-content-center pointer"
@@ -38,14 +38,14 @@
             aria-expanded="true"
             aria-controls="collapseOne"
           >
-            <p style="font-size: 17px">Hide your passwords</p>
+            <p class="accordionTitle">Hide your passwords</p>
           </div>
 
           <div
             id="collapseOne"
             class="collapse show"
             aria-labelledby="headingOne"
-            data-parent="#accordionExample"
+            data-parent="#mainAccordion"
           >
             <div class="card-body text-center">
               <form onsubmit="getEncryptedPasswrod(event)" class="form">
@@ -98,13 +98,13 @@
             aria-expanded="false"
             aria-controls="collapseTwo"
           >
-            <p style="font-size: 17px">Reveal your passwords</p>
+            <p class="accordionTitle">Reveal your passwords</p>
           </div>
           <div
             id="collapseTwo"
             class="collapse"
             aria-labelledby="headingTwo"
-            data-parent="#accordionExample"
+            data-parent="#mainAccordion"
           >
             <div class="card-body text-center">
               <form onsubmit="decryptPassword(event)" class="form">

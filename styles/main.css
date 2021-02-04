@@ -42,3 +42,6 @@ body {
   justify-content: left;
   align-items: flex-end;
 }
+.accordionTitle {
+  font-size: 17px;
+}

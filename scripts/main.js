@@ -16,12 +16,6 @@ function encrypt(plainPassword, key) {
   return JSON.stringify(asciiArray);
 }
 
-function closeOutput(div, text, buttonId) {
-  document.getElementById(text).innerHTML = "";
-  document.getElementById(div).classList.add("none");
-  document.getElementById(buttonId).innerHTML = "copy";
-}
-
 function decryptPassword(event) {
   event.preventDefault();
   let result = decrypt(event.target.password.value, event.target.key.value);
@@ -54,4 +48,10 @@ function copyContent(contentId, buttonId) {
   document.execCommand("copy");
   body.removeChild(tempInput);
   document.getElementById(buttonId).innerHTML = "copied";
+}
+
+function closeOutput(div, text, buttonId) {
+  document.getElementById(text).innerHTML = "";
+  document.getElementById(div).classList.add("none");
+  document.getElementById(buttonId).innerHTML = "copy";
 }
