@@ -48,6 +48,9 @@ function copyContent(contentId, buttonId) {
   document.execCommand("copy");
   body.removeChild(tempInput);
   document.getElementById(buttonId).innerHTML = "copied";
+  setTimeout(() => {
+    document.getElementById(buttonId).innerHTML = "copy";
+  }, 3000);
 }
 
 function closeOutput(div, text, buttonId) {
