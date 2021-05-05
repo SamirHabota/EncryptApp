@@ -53,8 +53,10 @@ function copyContent(contentId, buttonId) {
   }, 3000);
 }
 
-function closeOutput(div, text, buttonId) {
+function closeOutput(div, text, buttonId, inputOne, inputTwo) {
   document.getElementById(text).innerHTML = "";
   document.getElementById(div).classList.add("none");
   document.getElementById(buttonId).innerHTML = "copy";
+  document.getElementById(inputOne).value = "";
+  document.getElementById(inputTwo).value = "";
 }

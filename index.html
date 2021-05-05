@@ -55,6 +55,7 @@
                   name="password"
                   required
                   class="m-1 form-control"
+                  id="passwordInput"
                 />
                 <input
                   type="password"
@@ -62,6 +63,7 @@
                   name="key"
                   required
                   class="m-1 mt-3 form-control"
+                  id="keyInput"
                 />
                 <button
                   type="submit"
@@ -80,7 +82,7 @@
                   copy
                 </button>
                 <button
-                  onclick="closeOutput('outputDivId', 'outputId', 'outputButtonId')"
+                  onclick="closeOutput('outputDivId', 'outputId', 'outputButtonId','passwordInput', 'keyInput')"
                   class="btn btn-danger btn-sm"
                 >
                   close
@@ -114,6 +116,7 @@
                   name="password"
                   required
                   class="m-1 form-control"
+                  id="plainPasswordInput"
                 />
                 <input
                   type="password"
@@ -121,6 +124,7 @@
                   name="key"
                   required
                   class="m-1 mt-3 form-control"
+                  id="plainKeyInput"
                 />
                 <button
                   type="submit"
@@ -139,7 +143,7 @@
                   copy
                 </button>
                 <button
-                  onclick="closeOutput('plainOutputDivId', 'plainOutputId', 'plainOutputButtonId')"
+                  onclick="closeOutput('plainOutputDivId', 'plainOutputId', 'plainOutputButtonId','plainPasswordInput','plainKeyInput')"
                   class="btn btn-danger btn-sm"
                 >
                   close
